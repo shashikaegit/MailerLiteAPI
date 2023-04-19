@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+
+body {
+    font-family: 'Overlock', cursive;
+    background: #f2f3f7;
+    font-size: 14px;
+}
+
+.topbar {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    z-index: 9;
+    left: 250px;
+    right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.topbar .logo {
+    display: inline-block;
+    padding-top: 1px;
+    width: 120px;
+}
+
+.topbar .infobar {
+    display: inline-block;
+    float: right;
+}
+
+.breadcrumb-box {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.breadcrumb-box .page-title {
+    font-size: 18px;
+    color: #141d46;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.breadcrumb-box .breadcrumb-list {
+    text-align: left;
+}
+
+.breadcrumb-box .breadcrumb {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    background-color: transparent;
+}
+
+.breadcrumb-box .breadcrumb .breadcrumb-item a {
+    color: #8A98AC;
+}
+
+.breadcrumb-box .breadcrumb-item + .breadcrumb-item::before {
+    content: "\f105";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 14px;
+    padding-right: 10px;
+    padding-left: 2px;
+}
+
+.table-box{
+    border: 0;
+}
+
+.searchBox{
+    position: absolute;
+    right: 15px;
+    z-index: 1;
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+}
+
+.spinner:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.spinner:nth-child(2) {
+    animation-delay: -0.1s;
+}
+
+.spinner:nth-child(3) {
+    animation-delay: -0.2s;
+}
+
+.spinner:nth-child(4) {
+    animation-delay: -0.3s;
+}
+
+.spinner:nth-child(5) {
+    animation-delay: -0.4s;
+}
+
+.spinner:nth-child(6) {
+    animation-delay: -0.5s;
+}
+
+.spinner:nth-child(7) {
+    animation-delay: -0.6s;
+}
+
+.spinner:nth-child(8) {
+    animation-delay: -0.7s;
+}
+
+.spinner:nth-child(9) {
+    animation-delay: -0.8s;
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
