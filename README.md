@@ -28,7 +28,7 @@ This is an example project for using the MailerLite API to perform basic operati
    ```
    
 ## Usage
-You can now access the project by visiting http://localhost:8000 in your web browser.
+You can now access the project by visiting http://127.0.0.1:8000/ in your web browser.
 
 ## Additional Information
 
