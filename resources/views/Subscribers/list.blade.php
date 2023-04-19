@@ -127,11 +127,7 @@
                         data: 'subscribed_at',
                         orderable: false,
                         render: function(data) {
-                            const date = new Date(data);
-                            const day = date.getDate();
-                            const month = date.getMonth() + 1; // Months are zero-indexed, so we add 1
-                            const year = date.getFullYear();
-                            return `${day}/${month}/${year}`;
+                            return moment(data).format('DD/MM/YYYY');
                         }
                     },
                     {
@@ -139,12 +135,7 @@
                         data: 'subscribed_at',
                         orderable: false,
                         render: function(data) {
-                            const time = new Date(data);
-                            const hours = time.getHours();
-                            const minutes = time.getMinutes();
-                            const formattedHours = hours < 10 ? `0${hours}` : hours;
-                            const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
-                            return `${formattedHours}:${formattedMinutes}`;
+                            return moment(data).format('HH:mm');
                         }
                     },
                     {
